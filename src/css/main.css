@@ -303,10 +303,19 @@ body {
 }
 
 .slider-control {
+  display: flex;
+  justify-content: space-between;
   width: 206px;
   height: 14px;
   padding-top: 105px;
   cursor: pointer;
+}
+
+.slider-bullets {
+  display: flex;
+  justify-content: space-between;
+  width: 64px;
+  height: 10px;
 }
 
 .subtitle {
