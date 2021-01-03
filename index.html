@@ -30,7 +30,7 @@
 	
 			<section class="main">
 				<img class="main-foto" 
-					 src="./src/img/main-image 4.3.jpg" 
+					 src="./src/img/main-image.jpg" 
 					 alt="foto">
 				<div class="title">
 					<h1 class="title-header">Turnkey repair in the <br> city of <span class="title_city">Rostov-on-Don</span></h1>
@@ -144,7 +144,7 @@
 						<label class="repair-form--label" for="text">Name</label>
 						<input class="repair-form--item" type="text" placeholder="What is your name:" name="text" id="text">
 						<label class="repair-form--label" for="tel">Phone</label>
-						<input class="repair-form--item" type="tel" placeholder="Your phone number:" name="tel" id="tel">
+						<input class="repair-form--item" type="tel" placeholder="Your phone number:" name="phone" id="tel">
 					</form>
 					<button class="submit button">submit</button>
 				</div>
@@ -152,7 +152,6 @@
 					<input class="personalData-check" type="checkbox" name="check" id="check">
 					<label for="check" class="personalData-label">I agree to the processing of personal data</label>
 				</div>
-				</form>
 			</section>
 			<section class="typesOfRepair">
 				<div class="typesOfRepair-title control">
@@ -211,10 +210,39 @@
 						<div class="typesOfRepair-meterOfSquare button"><p>from 4000 rub / m2</p></div>
 					</div>
 				</div>
-				
 			</section>
-		
+			<section class="request">
+				<div class="request-container">
+					<div class="request-services">
+						<div class="request-services--item"><span class="request-services--text">Our specialist will arrive for measurements per day<br>
+							contact, or appoint a date convenient for you</span></div>
+						<div class="request-services--item"><span class="request-services--text">Free metering</span></div>
+						<div class="request-services--item"><span class="request-services--text">Free consultation</span></div>
+						<div class="request-services--item"><span class="request-services--text">Get a cost estimate and
+							the timing of your future repairs</span></div>
+					</div>
+					<div class="request-info">
+						<div class="request-title">
+							<h2>Leave a request for free
+								departure of the measurer</h2>
+						</div>
+						<form action="POST" class="request-form">
+							<label class="request-form--label" for="text">Name</label>
+							<input class="request-form--item repair-form--item" type="text" placeholder="What is your name:" name="text" id="text">
+							<label class="request-form--label" for="tel">Phone</label>
+							<input class="request-form--item repair-form--item" type="tel" placeholder="Your phone number:" name="tel" id="tel">
+							<label class="request-form--label" for="mail">Email</label>
+							<input class="request-form--item repair-form--item" type="email" placeholder="Your email:" name="mail" id="mail">
+							<input class="requst-personalData personalData-check" type="checkbox" name="check" id="check2">
+							<label for="check2" class="requst-personalData personalData-label">I agree to the processing of personal data</label>
+						</form>
+						<button class="request-submit submit button">Call the measurer</button>
+						<div class="piggyBank">
+							<span class="piggyBank-text">Help save 10 - 20% of the<br> cost of materials</span>
+						</div>
+					</div>
+				</div>
+			</section>
 	</div>
-	
 </body>
 </html>
