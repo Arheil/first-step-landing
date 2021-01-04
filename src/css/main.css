@@ -34,7 +34,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  flex: 1 1 1440px;
+  max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -113,17 +113,14 @@ body {
 
 .main {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  height: 705px;
+  min-width: 320px;
+  height: auto;
 }
 
 .main-foto {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   filter: brightness(0.3);
 }
 
@@ -134,7 +131,7 @@ body {
   position: absolute;
   width: 675px;
   height: 350px;
-  top: 195px;
+  top: 280px;
   left: 135px;
 }
 
@@ -303,10 +300,19 @@ body {
 }
 
 .slider-control {
+  display: flex;
+  justify-content: space-between;
   width: 206px;
   height: 14px;
   padding-top: 105px;
   cursor: pointer;
+}
+
+.slider-bullets {
+  display: flex;
+  justify-content: space-between;
+  width: 64px;
+  height: 10px;
 }
 
 .subtitle {
@@ -467,6 +473,10 @@ body {
   color: #363636;
 }
 
+.repair-form--item[name='phone'] {
+  margin-top: 10px;
+}
+
 .repair-form--label {
   display: block;
   position: relative;
@@ -522,7 +532,7 @@ body {
   border: 1px solid transparent;
 }
 
-/*Section "typesOfRepair"*/
+/*section typesOfRepair*/
 
 .typesOfRepair {
   min-height: 608px;
@@ -587,4 +597,172 @@ body {
   height: 54px;
   background: #E3B873;
   margin-top: -35px;
+}
+
+/*section request*/
+
+.request {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 320px;
+  height: 700px;
+  width: 100%;
+  background: url('../img/background.png') no-repeat;
+  background-size: 790px auto;
+}
+
+.request-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1206px;
+  margin-right: 0;
+}
+
+.reques-services {
+  width: 790px;
+  height: 598px;
+  margin-right: 144px;
+}
+
+/*style of form for request*/
+
+.request-info {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
+  max-height: 509px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 39px 49px 0;
+  background-color: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.request-form {
+  width: 408px;
+  margin-top: 39px;
+}
+
+.request-title {
+  width: 297px;
+  height: 47px;
+  margin-top: -13px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.request-form--item {
+  background-color: #131313;
+  width: 408px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 23px
+  margin-top: 0;
+  padding-bottom: -10px;
+  color: #fff;
+}
+
+.request-form--item::placeholder {
+  color: #fff;;
+}
+
+.request-form--item[type='text'], [type='tel'], [type='email'] {
+  margin-top: -3px;
+}
+
+.request-form > .request-form--item {
+  margin-bottom: 30px;
+}
+
+.request-form--item[type='email'] {
+  margin-bottom: 0;
+}
+
+.request-form--label {
+  align-self: flex-start;
+  position: relative;
+  bottom: -10px;
+  margin: 0;
+}
+
+.requst-personalData {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 23px
+}
+
+.request-submit {
+  align-self: flex-end;
+  margin-top: 33px;
+  margin-bottom: -9px;
+}
+
+.piggyBank {
+  width: 441px;
+  color: #E3B873;
+  align-self: flex-end;
+  top: 96px;
+  position: relative;
+  right: -90px;
+}
+
+.piggyBank::before {
+  content: url('../img/icons/piggyBank.svg');
+  position: absolute;
+  left: -100px;
+  top: -30px;
+}
+
+/*style of request-services*/
+
+.request-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -40px;
+  counter-reset: number 0;
+}
+
+.request-services--item {
+  position: relative;
+  width: 375px;
+  height: 42px;
+  display: flex;
+  counter-increment: number;
+}
+
+.request-services--item:last-child {
+  margin-bottom: 54px;
+}
+
+.request-services--item::before {
+  content: "0" counter(number);
+  color: #fff;
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'Yeseva One';
+  width: 42px;
+  height: 42px;
+  background-color: #E3B873;
+  border: 8px solid #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 50%;
+  left: 20px;
+  top: -10px;
+  margin-bottom: 100px;
+}
+
+.request-services--text {
+  padding-left: 80px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363636;
+  display: inline-flex;
+  align-self: center;
 }
