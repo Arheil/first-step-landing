@@ -30,7 +30,7 @@
 	
 			<section class="main">
 				<img class="main-foto" 
-					 src="./src/img/main-image 4.3.jpg" 
+					 src="./src/img/main-image.jpg" 
 					 alt="foto">
 				<div class="title">
 					<h1 class="title-header">Turnkey repair in the <br> city of <span class="title_city">Rostov-on-Don</span></h1>
@@ -93,7 +93,30 @@
 								</div>
 							</div>
 							<div class="slider-control">
-								<img src="./src/img/icons/slider-control.svg" alt="">
+								<div class="slider-leftArrow">
+									<svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 14L2.29917e-05 7.17301L6.63807 0.345975L7.58563 1.32052L1.89516 7.17301L7.58563 13.0255L6.63807 14Z" fill="white"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 6.48404L41.4556 6.48404L41.4556 7.86226L0.947578 7.86225L0.947579 6.48404Z" fill="white"/>
+										</svg>
+								</div>
+								<div class="slider-bullets">
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.952759" y="0.843689" width="9.56667" height="9.83904" rx="4.78333" fill="white"/>
+										</svg>
+									<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.0583191" y="0.843842" width="9.56667" height="9.83904" rx="4.78333" fill="white" fill-opacity="0.3"/>
+										</svg>
+									<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.0583191" y="0.843842" width="9.56667" height="9.83904" rx="4.78333" fill="white" fill-opacity="0.3"/>
+										</svg>											
+								</div>
+								<div class="slider-rightArrow">
+									<svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0.345825L41.6831 7.17286L35.0451 13.9999L34.0975 13.0254L39.788 7.17286L34.0975 1.32037L35.0451 0.345825Z" fill="white"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.86183L0.227569 7.86183L0.22757 6.48361L40.7356 6.48362L40.7356 7.86183Z" fill="white"/>
+										</svg>
+										
+								</div>
 							</div>
 						</div>
 							<img class="slider-foto" src="./src/img/Mask Group.png" alt="design foto">
@@ -121,7 +144,7 @@
 						<label class="repair-form--label" for="text">Name</label>
 						<input class="repair-form--item" type="text" placeholder="What is your name:" name="text" id="text">
 						<label class="repair-form--label" for="tel">Phone</label>
-						<input class="repair-form--item" type="tel" placeholder="Your phone number:" name="tel" id="tel">
+						<input class="repair-form--item" type="tel" placeholder="Your phone number:" name="phone" id="tel">
 					</form>
 					<button class="submit button">submit</button>
 				</div>
@@ -129,7 +152,6 @@
 					<input class="personalData-check" type="checkbox" name="check" id="check">
 					<label for="check" class="personalData-label">I agree to the processing of personal data</label>
 				</div>
-				</form>
 			</section>
 			<section class="typesOfRepair">
 				<div class="typesOfRepair-title control">
@@ -188,10 +210,39 @@
 						<div class="typesOfRepair-meterOfSquare button"><p>from 4000 rub / m2</p></div>
 					</div>
 				</div>
-				
 			</section>
-		
+			<section class="request">
+				<div class="request-container">
+					<div class="request-services">
+						<div class="request-services--item"><span class="request-services--text">Our specialist will arrive for measurements per day<br>
+							contact, or appoint a date convenient for you</span></div>
+						<div class="request-services--item"><span class="request-services--text">Free metering</span></div>
+						<div class="request-services--item"><span class="request-services--text">Free consultation</span></div>
+						<div class="request-services--item"><span class="request-services--text">Get a cost estimate and
+							the timing of your future repairs</span></div>
+					</div>
+					<div class="request-info">
+						<div class="request-title">
+							<h2>Leave a request for free
+								departure of the measurer</h2>
+						</div>
+						<form action="POST" class="request-form">
+							<label class="request-form--label" for="text">Name</label>
+							<input class="request-form--item repair-form--item" type="text" placeholder="What is your name:" name="text" id="text">
+							<label class="request-form--label" for="tel">Phone</label>
+							<input class="request-form--item repair-form--item" type="tel" placeholder="Your phone number:" name="tel" id="tel">
+							<label class="request-form--label" for="mail">Email</label>
+							<input class="request-form--item repair-form--item" type="email" placeholder="Your email:" name="mail" id="mail">
+							<input class="requst-personalData personalData-check" type="checkbox" name="check" id="check2">
+							<label for="check2" class="requst-personalData personalData-label">I agree to the processing of personal data</label>
+						</form>
+						<button class="request-submit submit button">Call the measurer</button>
+						<div class="piggyBank">
+							<span class="piggyBank-text">Help save 10 - 20% of the<br> cost of materials</span>
+						</div>
+					</div>
+				</div>
+			</section>
 	</div>
-	
 </body>
 </html>
