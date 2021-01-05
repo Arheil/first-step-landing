@@ -356,7 +356,7 @@ body {
   position: absolute;
   top: 15px;
   left: 40px;;
-  height: 2px;
+  height: 0.1em;
   width: 32px;
   background-color: #e3b873;
 }
@@ -366,7 +366,7 @@ body {
   position: absolute;
   bottom: 15px;
   right: 40px;
-  height: 2px;
+  height: 0.1em;
   width: 32px;
   background-color: #e3b873;
 }
@@ -765,4 +765,207 @@ body {
   color: #363636;
   display: inline-flex;
   align-self: center;
+}
+
+/*section clients*/
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  height: 992px;
+  width: 100%;
+  background: url('../img/background-2.png') repeat-x 50% 100%;
+}
+
+.clients::after {
+  content: "";
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 280px;
+}
+
+.clients-title {
+  margin-top: 68px;
+}
+
+.clients-subtitle {
+  width: 450px;
+  height: 57px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 29px;
+  color: #363636;
+}
+
+.client-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  width: 1236px;
+  height: 455px;
+}
+
+.client-card {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  height: 455px;
+}
+
+.client-info {
+  display: inline-flex;
+}
+
+.client-foto {
+  margin-right: 20px;
+}
+
+.client-name {
+  width: 178px;
+  height: 42px;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: 'Yeseva One';
+  align-self: center;
+}
+
+.client-feedback {
+  width: 324px;
+  height: 216px;
+  color: #959595;
+  font-size: 13px;
+  line-height: 180%;
+  margin-top: 25px;
+}
+
+.client-coast {
+  align-self: flex-start;
+  width: 294px;
+  height: 54px;
+}
+
+.client-coast > img {
+  width: 100%;
+  height: auto;
+  margin-left: -12px;
+}
+
+/*section contacts*/
+
+.contacts {
+  width: 100vw;
+  height: 954px;
+  background: no-repeat url('../img/background-3.png');
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.container-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: -200px auto 0;
+  width: 883px;
+  height: 445px;
+  background-color: #131313;
+}
+
+.contacts-form--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  height: 297px;
+  margin: 40px auto 0;
+  justify-content: center;
+}
+
+.contacts-form--title {
+  width: 257px;
+  height: 25px;
+  text-transform: uppercase;
+  font-family: 'Yeseva One';
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  margin: 45px auto 0;
+}
+
+.contacts-form--item {
+  width: 516px;
+  height: 44px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 0 0 #363636;
+  padding-top: 8px;
+}
+
+.contacts-form--item[type="tel"] {
+  margin-right: -36px;
+}
+
+.contacts-form--label {
+    bottom: 8px;
+    left: 40px;
+}
+
+.contacts-form--row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0;
+  margin-bottom: 50px;
+  width: 516px;
+  height: 45px;
+  margin-left: -36px;
+}
+
+.contacts-form--label[for="mail"] {
+  top: 8px;
+  left: 0;
+}
+
+.contacts-personalData {
+  margin-top: 40px;
+  align-self: center;
+}
+
+.contacts-button {
+  align-self: center;
+  margin-top: 26px;
+}
+
+.contacts-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 605px;
+  height: 110px;
+  text-align: center;
+  margin: 50px auto 35px;
+}
+
+.contacts-contacts--title {
+  margin: 0;
+  color: #e3b873;
+}
+
+.contacts-contacts--social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: -40px auto 0;
+  width: 71px;
+  height: 28px;
+}
+
+.contacts-map {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 925px;
+  height: 465px;
+  margin: 0 auto;
 }
