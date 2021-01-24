@@ -26,6 +26,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   border-radius: 2px;
+  padding: 10px;
   cursor: pointer;
   color: #fff;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -34,7 +35,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 1900px;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -114,12 +115,13 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   min-width: 320px;
   height: auto;
 }
 
 .main-foto {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   filter: brightness(0.3);
 }
@@ -129,8 +131,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   position: absolute;
-  width: 675px;
-  height: 350px;
+  max-width: 675px;
+  height: auto;
   top: 280px;
   left: 135px;
 }
@@ -264,9 +266,12 @@ body {
   letter-spacing: -0.07em;
 }
 
+.slider-wrapper {
+  flex: 0 2 100%;
+}
+
 .slider-foto {
-  /* flex: 1 1 680px; */
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -968,4 +973,76 @@ body {
   width: 925px;
   height: 465px;
   margin: 0 auto;
+}
+
+/*media requests*/
+
+@media (max-width: 1192px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+/*for mobile*/
+
+
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-navigation, .header-button {
+    display: none;
+  }
+  .header-contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-tel {
+    color: #fff;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 35%;
+  }
+  .options {
+    display: none;
+  }
+  .options-button {
+    display: block;
+    width: 75%;
+    margin-bottom: 25px;
+  }
+  .slider-info, .slider-control, 
+  .projects-header__link, .control {
+    display: none;
+  }
+  .slider {
+    flex-direction: column;
+  }
+  .slider-card {
+    text-align: center;
+    height: auto;
+  }
+  .slider-card_text {
+    width: 75%;
+    font-size: 11px;
+    line-height: 17.43px;
+    margin-bottom: 40px;
+  }
+  .slider-wrapper {
+    width: 80%;
+  }
+ 
 }
